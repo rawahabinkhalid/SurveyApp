@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/proof_of_payment_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/underline"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/proof_of_payment"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="#187bcd"
+                android:background="@drawable/half_underline"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/proof_of_payment_view_fields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/proof_of_payment_view"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_tv_pop_id"
+                
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:hint="@string/pop_id"
+                android:theme="@style/TextLabel"
+                app:boxStrokeColor="@color/box_stroke"
+                app:boxStrokeWidth="1.75dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tv_pop_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:theme="@style/TextLabelEditeText" 
+                    android:enabled="false"
+             />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+              <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_tv_distributor_name"
+                
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:hint="@string/distributor_name"
+                android:theme="@style/TextLabel"
+                app:boxStrokeColor="@color/box_stroke"
+                app:boxStrokeWidth="1.75dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tv_distributor_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:theme="@style/TextLabelEditeText" 
+                    android:enabled="false"
+                 />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_tv_created_date"
+                
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:hint="@string/created_date"
+                android:theme="@style/TextLabel"
+                app:boxStrokeColor="@color/box_stroke"
+                app:boxStrokeWidth="1.75dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tv_created_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:theme="@style/TextLabelEditeText" 
+                    android:enabled="false"
+                  />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_tv_payment_mode"
+                
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:hint="@string/payment_mode_POP"
+                android:theme="@style/TextLabel"
+                app:boxStrokeColor="@color/box_stroke"
+                app:boxStrokeWidth="1.75dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tv_payment_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:theme="@style/TextLabelEditeText" 
+                    android:enabled="false"
+              />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_tv_bank"
+                
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:hint="@string/bank"
+                android:theme="@style/TextLabel"
+                app:boxStrokeColor="@color/box_stroke"
+                app:boxStrokeWidth="1.75dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tv_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:theme="@style/TextLabelEditeText" 
+                    android:enabled="false"
+                   />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_tv_branch_code"
+                
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:hint="@string/branch_code_POP"
+                android:theme="@style/TextLabel"
+                app:boxStrokeColor="@color/box_stroke"
+                app:boxStrokeWidth="1.75dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tv_branch_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   android:theme="@style/TextLabelEditeText" 
+                    android:enabled="false"
+               />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_tv_transaction_no"
+                
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:hint="@string/transaction_no_POP"
+                android:theme="@style/TextLabel"
+                app:boxStrokeColor="@color/box_stroke"
+                app:boxStrokeWidth="1.75dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tv_transaction_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:theme="@style/TextLabelEditeText" 
+                    android:enabled="false"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_tv_payment_id"
+                
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:hint="@string/paymentid_pop"
+                android:theme="@style/TextLabel"
+                app:boxStrokeColor="@color/box_stroke"
+                app:boxStrokeWidth="1.75dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tv_payment_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:theme="@style/TextLabelEditeText" 
+                    android:enabled="false"
+                />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_tv_proof_of_payment_view_status"
+                
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:hint="@string/status"
+                android:theme="@style/TextLabel"
+                app:boxStrokeColor="@color/box_stroke"
+                app:boxStrokeWidth="1.75dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tv_proof_of_payment_view_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:theme="@style/TextLabelEditeText" 
+                    android:enabled="false"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/proof_of_payment_view_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/proof_of_payment_view_fields">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/border_set"
+                android:padding="10dp"
+                android:text="@string/proof_of_payment_heading"
+                android:textColor="#187bcd"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_proof_of_payments_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/proof_of_payment_view_header"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rv_proof_of_payments_view"
+            android:layout_marginBottom="10dp"
+            android:text="@string/all_rights_reserved"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+</ScrollView>

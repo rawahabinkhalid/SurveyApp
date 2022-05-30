@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Distributor.DistributorDashboard">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="42dip"
+            android:background="#fff"
+            app:popupTheme="@style/PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/notification_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/tv_username"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_no_notifications_black_24dp" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Hi, Jawwad Ali"
+                    android:textColor="#6D6E72"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+                <!--                android:layout_toLeftOf="@+id/toggle_online_payment"-->
+
+                <TextView
+                    android:id="@+id/tv_user_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_username"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/open_sans"
+                    android:paddingTop="5dp"
+                    android:text="Jawwad Associates"
+                    android:textColor="#6D6E72"
+                    android:textSize="7sp"
+                    android:textStyle="bold" />
+                <!--                android:layout_toLeftOf="@+id/toggle_online_payment"-->
+
+                <Switch
+                    android:id="@+id/toggle_online_payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Enable Online\nPayments"
+                    android:textColor="#6D6E72"
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_distributor_dashboard" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

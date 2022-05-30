@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:backgroundTint="#80FFFFFF"
+    android:backgroundTintMode="src_over">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/ln_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/underline"
+            android:layout_marginEnd="27dp">
+
+            <TextView
+                android:id="@+id/tv_support"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/payment"
+                android:textColor="@color/textcolor"
+                android:textSize="17sp" />
+
+            <RelativeLayout
+                android:id="@+id/create_payment_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/image_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_baseline_add_24" />
+
+                <TextView
+                    android:id="@+id/btn_addpayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/image_plus"
+                    android:paddingTop="2dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/create_payment"
+                    android:textColor="@color/textcolor"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <!--        <Button-->
+        <!--            android:id="@+id/btn_make_payment"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="45dp"-->
+        <!--            android:layout_below="@+id/ln_login"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:layout_marginStart="27dp"-->
+        <!--            android:layout_marginEnd="27dp"-->
+        <!--            android:background="@drawable/button_background"-->
+        <!--            android:gravity="center"-->
+        <!--            android:stateListAnimator="@null"-->
+        <!--            android:text="Make New Payment"-->
+        <!--            android:textAllCaps="false"-->
+        <!--            android:textColor="#fff"-->
+        <!--            android:textSize="14sp"-->
+
+        <!--            />-->
+
+        <LinearLayout
+            android:id="@+id/ln_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="27dp"
+            android:layout_below="@+id/ln_login"
+            android:orientation="vertical"
+
+            >
+
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/layout_txt_heading"
+                
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:fontFamily="@font/open_sans"
+                android:hint="@string/company"
+                android:theme="@style/TextLabel">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:theme="@style/TextLabelEditeText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/layout_txt_paymentid"
+                
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/open_sans"
+                android:hint="@string/paymentid_sp"
+                android:theme="@style/TextLabel">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_paymentid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:theme="@style/TextLabelEditeText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/layout_created_date"
+                
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/open_sans"
+                android:hint="@string/created_date"
+                android:theme="@style/TextLabel">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_created_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:theme="@style/TextLabelEditeText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/layout_transaction_date"
+                
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/open_sans"
+                android:hint="@string/transaction_date"
+                android:theme="@style/TextLabel">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_transaction_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:theme="@style/TextLabelEditeText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/layout_txt_bname"
+                
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/open_sans"
+                android:hint="@string/bank"
+                android:theme="@style/TextLabel">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_bname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:theme="@style/TextLabelEditeText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/layout_txt_authorization"
+                
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/open_sans"
+                android:hint="@string/auth_id"
+                android:theme="@style/TextLabel">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_authorization"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:theme="@style/TextLabelEditeText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/layout_txt_settlement"
+                
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/open_sans"
+                android:hint="@string/seltment_id"
+                android:theme="@style/TextLabel">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_settlement"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+
+                    android:theme="@style/TextLabelEditeText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/layout_txt_status"
+                
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/open_sans"
+                android:hint="@string/status"
+                android:theme="@style/TextLabel">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:theme="@style/TextLabelEditeText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/layout_txt_amount"
+                
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/open_sans"
+                android:hint="@string/amount"
+                android:theme="@style/TextLabel">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:theme="@style/TextLabelEditeText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/layout_txt_transaction_charges"
+                
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/open_sans"
+                android:hint="@string/trans_charges"
+                android:theme="@style/TextLabel">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_transaction_charges"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:theme="@style/TextLabelEditeText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/layout_txt_total_amount"
+                
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/open_sans"
+                android:hint="@string/total_amount"
+                app:boxBackgroundColor="#EBEBEB"
+                android:theme="@style/TextLabel">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_total_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:theme="@style/TextLabelEditeText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ln_txt"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="15dp"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btn_vreciept"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="27dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:stateListAnimator="@null"
+                android:text="@string/view_receipt"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="@dimen/button_text_size" />
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="27dp"
+                android:fontFamily="@font/open_sans"
+                android:layout_weight="1"
+                android:background="@drawable/button_background"
+                android:gravity="center"
+                android:stateListAnimator="@null"
+                android:text="@string/back"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="@dimen/button_text_size" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

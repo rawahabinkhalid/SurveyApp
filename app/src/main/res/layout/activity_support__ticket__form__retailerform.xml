@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:scrollbars="none"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp">
+
+        <LinearLayout
+            android:id="@+id/ll_tv_support"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/underline"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_support"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/support"
+                android:textColor="@color/textcolor"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_fields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_tv_support"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/ticket_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/rl_fields"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_round"
+            android:fontFamily="@font/open_sans"
+            android:stateListAnimator="@null"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/ticket_btn"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/back"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="@dimen/button_text_size" />
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/footer"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@id/ticket_btn"-->
+        <!--            android:layout_marginTop="30dp"-->
+        <!--            android:layout_marginBottom="10dp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="@string/all_rights_reserved" />-->
+
+
+    </RelativeLayout>
+</ScrollView>
+
